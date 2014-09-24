@@ -11,8 +11,8 @@ package pos.javaxi.lst3;
  */
 public class Computador {
     
-    private String modelo;
-    private String marca;
+    public String modelo;
+    public String marca;
     private int ram;
     private int hd;
     private Boolean superdrive;
@@ -87,5 +87,17 @@ public class Computador {
         this.superdrive = superdrive;
     }
     
+    
+    public String retornaMarca() {
+        return this.marca;
+    }
+    
+    private int byteToGb(int bytes) {
+        return bytes/1024/1024;
+    }
+    
+    private int gbToBytes(int gb) {
+        return gb*1024*1024;
+    }
     
 }
